@@ -29,7 +29,13 @@ const Upload = () => {
 
   const uploadVideo = async (e: any) => {
     const selectedFile = e.target.files[0];
-    const fileTypes = ["video/mp4", "video/webm", "video/ogg"];
+    const fileTypes = [
+      "video/mp4",
+      "video/webm",
+      "video/ogg",
+      "video/hevc",
+      "video/h.264",
+    ];
 
     // uploading asset to sanity
     if (fileTypes.includes(selectedFile.type)) {
